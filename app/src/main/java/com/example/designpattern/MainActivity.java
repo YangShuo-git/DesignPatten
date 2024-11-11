@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.designpattern.databinding.ActivityMainBinding;
+import com.example.designpattern.observer.ObserverActivity;
 import com.example.designpattern.singleton.SingletonActivity;
 
 import java.util.Arrays;
@@ -21,10 +22,10 @@ import me.jingbin.library.decoration.GridSpaceItemDecoration;
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private String[] patterns = {
-            "单例设计模式"
+            "单例模式", "观察者模式",
     };
     private Class[] classes = {
-            SingletonActivity.class
+            SingletonActivity.class, ObserverActivity.class,
     };
 
     @Override
