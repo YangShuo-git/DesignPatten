@@ -22,6 +22,7 @@
 
         <activity android:name=".singleton.SingletonActivity" />
         <activity android:name=".observer.ObserverActivity" />
+        <activity android:name=".factory.FactoryActivity" />
     </application>
 
 </manifest>
