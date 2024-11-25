@@ -2,6 +2,7 @@ package com.example.designpattern.factory.simplefactory;
 /**
  * 2、简单工厂模式
  * 专门定义一个类来负责创建其他类的实例，被创建的实例通常都具有共同的父类。
+ * 这个工厂可以根据传进来的tyoe，生产不同的产品
  */
 
 public class SimpleRouJiaMoFactory {

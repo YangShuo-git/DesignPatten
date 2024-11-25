@@ -1,6 +1,7 @@
 package com.example.designpattern.factory;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -11,6 +12,10 @@ import com.example.designpattern.R;
 import com.example.designpattern.app.AppConstant;
 import com.example.designpattern.app.EMTagHandler;
 import com.example.designpattern.databinding.ActivityFactoryBinding;
+import com.example.designpattern.factory.factorymethod.BeijingRouJiaMoStore;
+import com.example.designpattern.factory.factorymethod.BeijingSimpleRouJiaMoFactory;
+import com.example.designpattern.factory.factorymethod.XianRouJiaMoStore;
+import com.example.designpattern.factory.factorymethod.XianSimpleRouJiaMoFactory;
 import com.example.designpattern.factory.simplefactory.RouJiaMoStore;
 import com.example.designpattern.factory.simplefactory.SimpleRouJiaMoFactory;
 
@@ -36,6 +41,7 @@ public class FactoryActivity extends AppCompatActivity implements View.OnClickLi
     private void initListener() {
         binding.btStaticFactory.setOnClickListener(this);
         binding.btSimpleFactory.setOnClickListener(this);
+        binding.btFactoryMethod.setOnClickListener(this);
     }
 
     @Override
@@ -49,6 +55,13 @@ public class FactoryActivity extends AppCompatActivity implements View.OnClickLi
                 rouJiaMoStore.sellRouJiaMo("Suan");
                 rouJiaMoStore.sellRouJiaMo("Tian");
                 rouJiaMoStore.sellRouJiaMo("La");
+                break;
+            case R.id.bt_factory_method: // 3.工厂方法模式 (开分店)
+                XianRouJiaMoStore xianRoujiaMoStore = new XianRouJiaMoStore(new XianSimpleRouJiaMoFactory());
+                xianRoujiaMoStore.sellRouJiaMo("Suan");
+
+                BeijingRouJiaMoStore bjRoujiaMoStore = new BeijingRouJiaMoStore(new BeijingSimpleRouJiaMoFactory());
+                bjRoujiaMoStore.sellRouJiaMo("Suan");
                 break;
             default:
                 break;

@@ -41,7 +41,7 @@
                 android:id="@+id/bt_factory_method"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="3.工厂方法模式  (西安开分店)" />
+                android:text="3.工厂方法模式  (开分店)" />
 
             <Button
                 android:id="@+id/bt_abstract_factory"

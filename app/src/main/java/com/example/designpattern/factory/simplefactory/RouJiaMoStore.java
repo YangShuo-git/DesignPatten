@@ -15,5 +15,4 @@ public class RouJiaMoStore {
 
         return RouJiaMo;
     }
-
 }
