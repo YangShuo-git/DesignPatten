@@ -47,7 +47,7 @@
                 android:id="@+id/bt_abstract_factory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="4.抽象工厂模式  (使用官方提供的原料)" />
+                android:text="4.抽象工厂模式  (使用分店特色原料)" />
 
             <View
                 android:layout_width="match_parent"

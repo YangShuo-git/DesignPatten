@@ -12,6 +12,8 @@ import com.example.designpattern.R;
 import com.example.designpattern.app.AppConstant;
 import com.example.designpattern.app.EMTagHandler;
 import com.example.designpattern.databinding.ActivityFactoryBinding;
+import com.example.designpattern.factory.abstractfactory.XianTeSeRouJiaMoStore;
+import com.example.designpattern.factory.abstractfactory.XianTeSeSimpleRouJiaMoFactory;
 import com.example.designpattern.factory.factorymethod.BeijingRouJiaMoStore;
 import com.example.designpattern.factory.factorymethod.BeijingSimpleRouJiaMoFactory;
 import com.example.designpattern.factory.factorymethod.XianRouJiaMoStore;
@@ -42,6 +44,7 @@ public class FactoryActivity extends AppCompatActivity implements View.OnClickLi
         binding.btStaticFactory.setOnClickListener(this);
         binding.btSimpleFactory.setOnClickListener(this);
         binding.btFactoryMethod.setOnClickListener(this);
+        binding.btAbstractFactory.setOnClickListener(this);
     }
 
     @Override
@@ -53,8 +56,6 @@ public class FactoryActivity extends AppCompatActivity implements View.OnClickLi
             case R.id.bt_simple_factory: // 2.简单工厂模式
                 RouJiaMoStore rouJiaMoStore = new RouJiaMoStore(new SimpleRouJiaMoFactory());
                 rouJiaMoStore.sellRouJiaMo("Suan");
-                rouJiaMoStore.sellRouJiaMo("Tian");
-                rouJiaMoStore.sellRouJiaMo("La");
                 break;
             case R.id.bt_factory_method: // 3.工厂方法模式 (开分店)
                 XianRouJiaMoStore xianRoujiaMoStore = new XianRouJiaMoStore(new XianSimpleRouJiaMoFactory());
@@ -62,6 +63,10 @@ public class FactoryActivity extends AppCompatActivity implements View.OnClickLi
 
                 BeijingRouJiaMoStore bjRoujiaMoStore = new BeijingRouJiaMoStore(new BeijingSimpleRouJiaMoFactory());
                 bjRoujiaMoStore.sellRouJiaMo("Suan");
+                break;
+            case R.id.bt_abstract_factory:// 4.抽象工厂模式 (不同分店提供特色原料)
+                XianTeSeRouJiaMoStore xianRoujiaMoTeSeStore = new XianTeSeRouJiaMoStore(new XianTeSeSimpleRouJiaMoFactory());
+                xianRoujiaMoTeSeStore.sellRouJiaMo("suan");
                 break;
             default:
                 break;
