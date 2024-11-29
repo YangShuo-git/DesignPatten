@@ -24,6 +24,7 @@
         <activity android:name=".observer.ObserverActivity" />
         <activity android:name=".factory.FactoryActivity" />
         <activity android:name=".memento.MementoActivity" />
+        <activity android:name=".proxy.ProxyActivity" />
     </application>
 
 </manifest>

@@ -12,8 +12,10 @@ import com.example.designpattern.databinding.ActivityMainBinding;
 import com.example.designpattern.factory.FactoryActivity;
 import com.example.designpattern.memento.MementoActivity;
 import com.example.designpattern.observer.ObserverActivity;
+import com.example.designpattern.proxy.ProxyActivity;
 import com.example.designpattern.singleton.SingletonActivity;
 
+import java.lang.reflect.Proxy;
 import java.util.Arrays;
 
 import me.jingbin.library.ByRecyclerView;
@@ -26,10 +28,12 @@ public class MainActivity extends AppCompatActivity {
     private String[] patterns = {
             "单例模式", "观察者模式",
             "工厂模式", "备忘录模式",
+            "代理模式",
     };
     private Class[] classes = {
             SingletonActivity.class, ObserverActivity.class,
             FactoryActivity.class, MementoActivity.class,
+            ProxyActivity.class,
     };
 
     @Override
