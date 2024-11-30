@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.designpattern.adapter.AdapterActivity;
 import com.example.designpattern.databinding.ActivityMainBinding;
 import com.example.designpattern.factory.FactoryActivity;
 import com.example.designpattern.memento.MementoActivity;
@@ -28,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
     private String[] patterns = {
             "单例模式", "观察者模式",
             "工厂模式", "备忘录模式",
-            "代理模式",
+            "代理模式", "适配器模式",
     };
     private Class[] classes = {
             SingletonActivity.class, ObserverActivity.class,
-            FactoryActivity.class, MementoActivity.class,
-            ProxyActivity.class,
+            FactoryActivity.class,   MementoActivity.class,
+            ProxyActivity.class,     AdapterActivity.class,
     };
 
     @Override
