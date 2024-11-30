@@ -4,7 +4,6 @@ import android.os.Bundle;
 
 import com.example.designpattern.app.AppConstant;
 import com.example.designpattern.app.EMTagHandler;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -18,8 +17,8 @@ import com.example.designpattern.R;
 /**
  * 适配器模式:
  * 定义：将一个类的接口转换成客户期望的另一个接口，适配器让原本接口不兼容的类可以相互合作。
- * 说适配器的功能就是把一个接口转成另一个接口。
- * 手机充电器一般都是5V左右，家用交流电压220V，所以手机充电需要一个适配器（降压器）
+ * 是直接提供一个独立的适配器类，还是继承一个类的接口来当适配器？
+ * 手机充电器一般都是5V左右，家用交流电压220V，所以手机充电需要一个适配器
  */
 public class AdapterActivity extends AppCompatActivity {
 
@@ -37,8 +36,8 @@ public class AdapterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Mobile mobile = new Mobile();
                 
-                // 手机充电，5v转220v适配器
-                V5Power v5Power = new V5PowerAdapter(new V220Power());
+                // 手机充电，需要220v转5v的适配器
+                V5Power v5Power = new V220To5PowerAdapter(new V220Power());
                 mobile.inputPower(v5Power);
             }
         });

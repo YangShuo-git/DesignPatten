@@ -2,10 +2,13 @@ package com.example.designpattern.adapter;
 
 import android.util.Log;
 
+// 手机需要的是5v，但传进来的家用电是220v，所以需要适配器
 public class Mobile {
-    // 这里传入的是 5v接口,实现了这个接口的类也可以传入
+    private static final String TAG = "Mobile";
+
+    // 接入5v接口
     public void inputPower(V5Power v5Power) {
+        Log.e(TAG, "手机充电需要的是5v电压, 而家用电是220v，需要适配器处理");
         int provideV5Power = v5Power.provideV5Power();
-        Log.e("---", "手机需要的是5V电压充电, 已经适配到" + provideV5Power + "V");
     }
 }
