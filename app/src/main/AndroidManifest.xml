@@ -26,6 +26,7 @@
         <activity android:name=".memento.MementoActivity" />
         <activity android:name=".proxy.ProxyActivity" />
         <activity android:name=".adapter.AdapterActivity" />
+        <activity android:name=".decorator.DecoratorActivity" />
     </application>
 
 </manifest>

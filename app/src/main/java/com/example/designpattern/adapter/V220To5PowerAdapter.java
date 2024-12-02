@@ -17,7 +17,7 @@ public class V220To5PowerAdapter implements V5Power {
     public int provideV5Power() {
         int result = 0;
         if (mV220Power.provideV220Power() == 220) {
-            Log.e(TAG, "适配器: 经过复杂的操作,已将" + mV220Power.provideV220Power() + "v转为5v");
+            Log.e(TAG, "适配器: 经过复杂的操作, 已将" + mV220Power.provideV220Power() + "v转为5v");
             result = 5;
         }
         return result;
