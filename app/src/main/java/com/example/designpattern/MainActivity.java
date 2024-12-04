@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.designpattern.adapter.AdapterActivity;
+import com.example.designpattern.bridge.BridgeActivity;
 import com.example.designpattern.databinding.ActivityMainBinding;
 import com.example.designpattern.decorator.DecoratorActivity;
 import com.example.designpattern.factory.FactoryActivity;
@@ -28,16 +29,16 @@ import me.jingbin.library.decoration.GridSpaceItemDecoration;
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private String[] patterns = {
-            "单例模式", "观察者模式",
-            "工厂模式", "备忘录模式",
-            "代理模式", "适配器模式",
-            "装饰器模式",
+            "单例模式",  "观察者模式",
+            "工厂模式",  "备忘录模式",
+            "代理模式",  "适配器模式",
+            "装饰器模式", "桥接模式",
     };
     private Class[] classes = {
             SingletonActivity.class, ObserverActivity.class,
             FactoryActivity.class,   MementoActivity.class,
             ProxyActivity.class,     AdapterActivity.class,
-            DecoratorActivity.class,
+            DecoratorActivity.class, BridgeActivity.class,
     };
 
     @Override

@@ -27,6 +27,7 @@
         <activity android:name=".proxy.ProxyActivity" />
         <activity android:name=".adapter.AdapterActivity" />
         <activity android:name=".decorator.DecoratorActivity" />
+        <activity android:name=".bridge.BridgeActivity" />
     </application>
 
 </manifest>
