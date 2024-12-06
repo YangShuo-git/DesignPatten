@@ -28,6 +28,7 @@
         <activity android:name=".adapter.AdapterActivity" />
         <activity android:name=".decorator.DecoratorActivity" />
         <activity android:name=".bridge.BridgeActivity" />
+        <activity android:name=".builder.BuilderActivity" />
     </application>
 
 </manifest>
