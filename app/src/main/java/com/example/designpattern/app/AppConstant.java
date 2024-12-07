@@ -9,7 +9,7 @@ public class AppConstant {
     public final static String DECORATOR_DEFINE = "<em>装饰器模式</em>：若要扩展功能，装饰器提供了比集成更有弹性的替代方案，动态地将功能附加到对象上。当设计好了一个类，需要给这个类添加一些辅助的功能，并且不希望改变这个类的代码，这时候需要装饰器模式。这里还体现了一个原则：<b>类应该对扩展开放，对修改关闭。</b>";
     public final static String FACADE_DEFINE = "<em>外观模式</em>提供一个统一的接口，用来访问子系统中的一群接口，外观定义了一个高层的接口，让子系统更容易使用。其实就是<b>为了方便客户的使用，把一群操作，封装成一个方法。</b>)";
     public final static String TEMPLATE_METHOD_DEFINE = "<em>模板方法模式</em>定义：定义了一个算法的骨架，而将一些步骤延迟到子类中，模版方法使得子类可以在不改变算法结构的情况下，重新定义算法的步骤。(模版方法定义了一个算法的步骤，并且允许子类为一个或多个步骤提供实现。)";
-    public final static String BUILDER_DEFINE = "<em>建造者模式</em>建造模式是对象的创建模式。建造模式可以将一个产品的内部表象（internal representation）与产品的生产过程分割开来，从而可以使一个建造过程生成具有不同的内部表象的产品对象。";
+    public final static String BUILDER_DEFINE = "<em>建造者模式</em>：建造模式是对象的创建模式。建造模式可以将一个产品的内部表象与产品的生产过程分割开来，从而可以使一个建造过程生成具有不同的内部表象的产品对象。";
     public final static String PROTOTYPE_DEFINE = "<em>原型模式</em>是用于创建重复的对象，同时又能保证性能。这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式。";
     public final static String FLYWEIGHT_DEFINE = "<em>享元模式</em>主要用于减少创建对象的数量，以减少内存占用和提高性能。这种类型的设计模式属于结构型模式，它提供了减少对象数量从而改善应用所需的对象结构的方式。";
     public final static String PROXY_DEFINE = "<em>代理模式：</em>一个类代表另一个类的功能。在代理模式中，需要创建具有现有对象的对象，以便向外界提供功能接口。";
